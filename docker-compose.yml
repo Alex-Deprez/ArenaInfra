@@ -1,0 +1,7 @@
+services:
+  arena-server:
+    image: ghcr.io/alex-deprez/arena-server:latest
+    container_name: arena-server
+    ports:
+      - "7777:7777/udp"
+    restart: unless-stopped
